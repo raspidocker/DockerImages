@@ -20,7 +20,3 @@ OS | java  | tomcat
 OS | nodejs  | restapi
 OS |...|
 
-
-<div class="alert warning">
-testwearning
-</div>
