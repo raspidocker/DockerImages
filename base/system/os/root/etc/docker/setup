@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+ARGS=$@
+INIT_DIR="/etc/docker/postinstall.d"
+if [ $(ls ${INIT_DIR}/*.sh | wc -l) -gt 0 ]; then
+	chmod a+x ${INIT_DIR}/*
+	for setupscript in ${INIT_DIR}/*.sh; do
+		echo -e "[SETUP] ${setupscript}"
+		${setupscript}
+	done
+fi
+
+/start $ARGS

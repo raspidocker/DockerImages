@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# UP.d
+/etc/docker/init
+
+#Banner
+cat /etc/docker/banner.inc
+
+#ARGS x
+$@

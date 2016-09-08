@@ -1,0 +1,7 @@
+#!/bin/bash
+
+msg="REPLACE THIS SCRIPT WIDTH YOUR COMMANDS"
+echo $msg
+while true; do
+    sleep 1;
+done
