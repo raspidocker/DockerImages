@@ -12,9 +12,10 @@ Repository der Dateien für die Dockerimage. Die Image liegen in der Registry in
 ### Struktur der Registry
 Level 1 | Level 2 | Level 3
 ------------ | ------------- | ------------
-OS | nodejs | webapp
+OS | couchdb | 
 OS | apache | webapp
+OS | nginx | logdownloader
+OS | nodejs | webapp
 OS | java  | tomcat
 OS | nodejs  | restapi
-OS | nginx | logdownloader
 OS |...|
