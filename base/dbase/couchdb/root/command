@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+#cat /etc/docker/banner.inc
+echo -e "\n... starting couchdb ..."
+/etc/init.d/couchdb start
