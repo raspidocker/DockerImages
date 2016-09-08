@@ -1,0 +1,7 @@
+.idea
+.idea/*
+images/**/node_modules
+.gitignore
+base/dbase/couchdb/root/etc/
+base/lang/nodejs/root/etc/docker/postinstall.d/
+base/net/
