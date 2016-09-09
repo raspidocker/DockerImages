@@ -1,7 +1,7 @@
 #
 # Dockerfile
 #
-raspidocker/os-resin
+FROM raspidocker/os-resin
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 
