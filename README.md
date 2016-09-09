@@ -1,4 +1,4 @@
-# :whale: raspidocker/DockerImages
+# ![logo](https://avatars1.githubusercontent.com/u/22078301?v=3&s=33) raspidocker/DockerImages
 
 ## Was ist raspidocker?
 Raspidocker beschäftigt sich mit dem Betrieb von Dockercontainern auf dem Raspberry-PI. 
