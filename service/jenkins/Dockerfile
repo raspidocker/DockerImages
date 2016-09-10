@@ -5,7 +5,7 @@ FROM raspidocker/mware-tomcat7
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 
-ENV ENV_DOWNLOADURL=https://updates.jenkins-ci.org/latest/jenkins.war
+ENV ENV_JENKINS_VERSION=2.21
 
 ADD root /
 

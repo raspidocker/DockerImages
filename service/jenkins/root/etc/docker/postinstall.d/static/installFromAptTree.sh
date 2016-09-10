@@ -1,11 +1,11 @@
 #!/bin/bash
 
-f_ware=${ENV_WARFILE:-"jenkins.war"}
-d_url=${ENV_DOWNLOADURL:-"ERROR"}
+jenkins_version=${ENV_JENKINS_VERSION:-"ERROR"}
+d_url=https://updates.jenkins-ci.org/download/war/${jenkins_version}/jenkins.war
 
 
-if [ "$d_url" = "ERROR" ];then
-    echo "[ERROR] - check env";
+if [ "$jenkins_version" = "ERROR" ];then
+    echo "[ERROR] - Jenkinsversion is not set";
     exit 1;
 fi
 
