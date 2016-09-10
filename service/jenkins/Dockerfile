@@ -9,9 +9,9 @@ ENV ENV_JENKINS_VERSION=2.21
 ADD root /
 
 # STATIC POSTINSTALL
-#RUN chmod a+x -R /etc/docker/postinstall.d/* && /etc/docker/postinstall.d/static/installFromAptTree.sh
-RUN mkdir /tomcat && ln -s /var/lib/tomcat7/webapps /tomcat/webapps
+RUN chmod a+x -R /etc/docker/postinstall.d/* && /etc/docker/postinstall.d/static/installFromAptTree.sh
 
-ADD src/jenkins.war /tomcat/webapps/jenkins.war
+#RUN mkdir /tomcat && ln -s /var/lib/tomcat7/webapps /tomcat/webapps
+#ADD src/jenkins.war /tomcat/webapps/jenkins.war
 
 EXPOSE 8080
