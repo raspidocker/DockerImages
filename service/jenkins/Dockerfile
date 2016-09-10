@@ -4,16 +4,11 @@
 FROM raspidocker/lang-java
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
-ENV ENV_JENKINS_VERSION=2.21
-
 ADD root /
 
-# STATIC POSTINSTALL
-RUN chmod a+x -R /etc/docker && /etc/docker/postinstall.d/static/installFromAptTree.sh && chmod a+x /command && chmod a+x /start
-
-#RUN mkdir /tomcat && ln -s /var/lib/tomcat7/webapps /tomcat/webapps
-#ADD src/jenkins.war /tomcat/webapps/jenkins.war
-
+RUN wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add - && \
+ sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'  && \
+ apt-get update  && apt-get install jenkins && chmod a+x -R /etc/docker && chmod a+x /command && chmod a+x /start
 
 
 EXPOSE 8080
