@@ -13,3 +13,6 @@ RUN chmod a+x -R /etc/docker && /etc/docker/postinstall.d/static/installFromAptT
 
 #RUN mkdir /tomcat && ln -s /var/lib/tomcat7/webapps /tomcat/webapps
 #ADD src/jenkins.war /tomcat/webapps/jenkins.war
+
+
+EXPOSE 8080
