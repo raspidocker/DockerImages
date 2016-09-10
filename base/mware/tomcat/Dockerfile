@@ -3,7 +3,7 @@ FROM raspidocker/lang-java
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 # Install dependencies
-RUN tomcat7
+RUN apt-get install tomcat7
 
 ADD root /
     
