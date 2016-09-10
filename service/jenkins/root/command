@@ -1,4 +1,6 @@
 #!/bin/bash
 
 cd /app
+LOGFILE=/var/log/lenkins.log
+touch $LOGFILE
 nohup java -jar jenkins.war > $LOGFILE 2>&1
