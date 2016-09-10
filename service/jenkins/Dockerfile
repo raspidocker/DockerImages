@@ -12,6 +12,6 @@ ADD root /
 #RUN chmod a+x -R /etc/docker/postinstall.d/* && /etc/docker/postinstall.d/static/installFromAptTree.sh
 RUN mkdir /tomcat && ln -s /var/lib/tomcat7/webapps /tomcat/webapps
 
-ADD /src/jenkins.war /tomcat/webapps/
+ADD src/jenkins.war /tomcat/webapps/jenkins.war
 
 EXPOSE 8080
