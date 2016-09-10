@@ -15,6 +15,10 @@ else
     cd /app
     echo "* Downloading $d_url"
     curl -OL $d_url
+
+    if [ -f "/jenkins.war" ]; then
+        mv /jenkins.war /app/
+    fi
 fi
 
 exit 0;
