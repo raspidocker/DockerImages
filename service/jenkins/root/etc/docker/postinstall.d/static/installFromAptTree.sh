@@ -1,7 +1,7 @@
 #!/bin/bash
 
-f_ware=${ENV_WARFILE:"jenkins.war"}
-d_url=${ENV_DOWNLOADURL:"ERROR"}
+f_ware=${ENV_WARFILE:-"jenkins.war"}
+d_url=${ENV_DOWNLOADURL:-"ERROR"}
 
 
 if [ "$d_url" = "ERROR" ];then
