@@ -12,6 +12,7 @@ if [ "$jenkins_version" = "ERROR" ];then
     echo "[ERROR] - Jenkinsversion is not set";
     exit 1;
 else
+    cd /app
     echo "* Downloading $d_url"
     curl -OL $d_url
 fi
