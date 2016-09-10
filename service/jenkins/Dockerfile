@@ -11,3 +11,6 @@ ADD root /
 
 # STATIC POSTINSTALL
 RUN /etc/docker/postinstall.d/static/installFromAptTree.sh
+
+
+EXPOSE 8080
