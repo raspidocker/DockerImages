@@ -1,7 +1,7 @@
 #!/bin/bash
 
 jenkins_version=${ENV_JENKINS_VERSION:-"ERROR"}
-d_url=https://updates.jenkins-ci.org/download/war/${jenkins_version}/jenkins.war
+d_url=ttp://mirrors.jenkins-ci.org/war/${jenkins_version}/jenkins.war
 
 
 if [ "$jenkins_version" = "ERROR" ];then
