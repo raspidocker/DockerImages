@@ -13,6 +13,7 @@ mkdir /tomcat
 ln -s /var/lib/tomcat7/webapps /tomcat/webapps
 cd /tomcat/webapps/
 
+echo "* Downloading $d_url"
 curl $d_url
 
 echo "* After installing WAR, list webapps-dir:"
