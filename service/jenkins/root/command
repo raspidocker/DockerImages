@@ -1,7 +1,9 @@
 #!/bin/bash
 
-cd /app
+chmod -R 777 /app
+mkdir -p /app/home
 #LOGFILE=/var/log/lenkins.log
 #touch $LOGFILE
 #nohup java -jar jenkins.war > $LOGFILE 2>&1
-java -jar jenkins.war
+
+java -jar /app/jenkins.war --httpPort=8080 -DJENKINS_HOME=/app/home -Djava.awt.headless=true
