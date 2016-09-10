@@ -5,6 +5,7 @@ d_url=http://mirrors.jenkins-ci.org/war/${jenkins_version}/jenkins.war
 
 if [ ! -e /tomcat/webapps ]; then
     mkdir /tomcat
+    chmod 777 /tomcat
     ln -s /var/lib/tomcat7/webapps /tomcat/webapps
 fi
 cd /tomcat/webapps/
