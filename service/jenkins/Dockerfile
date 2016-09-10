@@ -1,7 +1,7 @@
 #
 # Dockerfile
 #
-FROM raspidocker/mware-tomcat7
+FROM raspidocker/lang-java
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 ENV ENV_JENKINS_VERSION=2.21
