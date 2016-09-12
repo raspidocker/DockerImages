@@ -18,8 +18,8 @@ RUN     apt-get update && apt-get install -y -y --no-install-recommends apt-util
 # Install grails and project dependencies
 ADD src /work
 WORKDIR /work
-RUN     ./grailsw help
-RUN     ./grailsw war
+RUN     cd /work && /work/grailsw help
+RUN     /work/grailsw war
 RUN     cp target/docker-registry-ui-*.war /var/lib/tomcat7/webapps/ROOT.war
 
 # Update catalina configuration
