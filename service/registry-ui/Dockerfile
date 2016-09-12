@@ -9,7 +9,7 @@ ENV     ENV_WORKING_DIR /work && \
         JAVA_HOME /usr/lib/jvm/java-7-openjdk-armhf/
 
 # Mount Files
-ADD     root /
+#ADD     root /
 
 # Install from apt-tree
 RUN     apt-get update && apt-get install -y -y --no-install-recommends apt-utils groovy git tomcat7 && \
