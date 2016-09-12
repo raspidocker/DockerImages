@@ -1,7 +1,7 @@
 #
 # Dockerfile 'registry-ui'
 #
-FROM raspidocker/mware-tomcat
+FROM raspidocker/mware-tomcat7
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 # Variables
