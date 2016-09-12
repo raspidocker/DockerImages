@@ -18,6 +18,7 @@ RUN     apt-get update && apt-get install -y -y --no-install-recommends apt-util
 
 
 # Install grails and project dependencies
+ADD src /work
 WORKDIR /work
 ADD     grailsw /work/grailsw
 ADD     wrapper /work/wrapper
