@@ -11,7 +11,7 @@ ENV     JAVA_HOME /usr/lib/jvm/java-7-openjdk-armhf/
 #ADD     root /
 
 # Install from apt-tree
-RUN     apt-get update && apt-get install -y -y --no-install-recommends apt-utils groovy git tomcat7 && \
+RUN     apt-get update && apt-get install -y --no-install-recommends apt-utils groovy git tomcat7 && \
         mkdir -p /var/lib/h2 && chmod a+rw /var/lib/h2 &&  rm -rf /var/lib/tomcat7/webapps/*
 
 # Install grails and project dependencies
