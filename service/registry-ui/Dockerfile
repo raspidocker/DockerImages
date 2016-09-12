@@ -5,7 +5,7 @@ FROM raspidocker/lang-java
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 # Variables
-ENV     ENV_WORKING_DIR=/work && \
+ENV     ENV_WORKING_DIR /work && \
         JAVA_HOME /usr/lib/jvm/java-7-openjdk-armhf/
 
 # Mount Files
