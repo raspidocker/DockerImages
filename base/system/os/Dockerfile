@@ -20,7 +20,7 @@ ADD root /
 # Install dependencies
 #
 RUN apt-get update && apt-get install -y \
-    vim curl net-tools wget unzip && \
+    vim curl git net-tools wget unzip && \
     chmod -R 755 /etc/docker/* && chmod 755 /start && chmod 755 /command
 
 #
