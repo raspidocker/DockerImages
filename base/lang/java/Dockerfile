@@ -5,5 +5,5 @@ FROM raspidocker/os-resin
 MAINTAINER Michael Eichinger <raspidocker@mgeo.de>
 
 
-RUN apt-get install openjdk-7-jdk
+RUN apt-get install -y openjdk-7-jdk groovy
 
